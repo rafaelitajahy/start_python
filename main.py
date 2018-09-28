@@ -118,7 +118,11 @@ while True:
     else:
         print('Conta inválida')
 
-    input('Pressione <ENTER> para continuar...')  # pause do programa
+    app_func = input('Pressione <1> para continuar ou <2> para sair...')  # pause do programa
 
-    clear = 'cls' if os.name == 'nt' else 'clear'
-    os.system(clear)
+    #clear = 'cls' if os.name == 'nt' else 'clear'
+
+    if app_func == "1":
+        os.system(clear)
+    else:
+        break
